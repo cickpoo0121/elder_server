@@ -75,7 +75,7 @@ app.post('/sendMessage', (req, res) => {
     // const { userId, event } = req.body;
     const { userId, event } = req.body;
 
-    console.log(req.body)
+    // console.log(req.body)
     // console.log(event)
 
     client.pushMessage(userId, event == 0 ? messageIncase : messageOver)
